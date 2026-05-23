@@ -1,117 +1,52 @@
-# 🚀 DevOps Interview Preparation Roadmap
+# 🚀 DevOps Interview Roadmap for 5 Years Experience
 
-A complete **FAANG/Product Company DevOps Interview Preparation Roadmap** for experienced engineers targeting **40+ LPA roles**.
+A complete **Senior DevOps / SRE / Platform Engineering Interview Preparation Repository** for engineers targeting:
+
+- FAANG Companies
+- Product-Based Companies
+- High Scale Startups
+- 40+ LPA Roles
 
 This repository contains:
-- 30-Day DevOps Roadmap
+- Linux Deep Dive
 - Kubernetes Troubleshooting
-- AWS Preparation
-- Linux Debugging
-- CI/CD Design
-- System Design
-- Scenario-Based Interview Questions
-- Senior-Level Production Use Cases
-- Behavioral Preparation
-- Mock Interview Strategy
+- AWS Architecture
+- Docker
+- Terraform
+- CI/CD
+- Monitoring & Observability
+- DevOps System Design
+- Production Scenarios
+- Behavioral Questions
+- Mock Interviews
+- Senior-Level Interview Questions & Answers
 
 ---
 
-# 👨‍💻 Target Audience
+# 👨‍💻 Who Is This Repository For?
 
-This roadmap is designed for:
+This repository is designed for:
 - DevOps Engineers
-- Site Reliability Engineers (SRE)
+- SRE Engineers
 - Platform Engineers
 - Cloud Engineers
-- Backend Engineers moving into DevOps/SRE
+- Backend Engineers transitioning into DevOps/SRE
 
 ### Experience Level
-- 3–8 Years
-
-### Target Companies
-- Amazon
-- Google
-- Microsoft
-- Atlassian
-- Adobe
-- Uber
-- Salesforce
-- Walmart Global Tech
+- 4–8 Years
 
 ---
 
-# 🎯 Goal
+# 🎯 Main Goal
 
 Prepare for:
 - Senior DevOps Engineer
-- SRE Engineer
+- Site Reliability Engineer (SRE)
 - Platform Engineer
-- Cloud Infrastructure Engineer
+- Infrastructure Engineer
 
-### Expected Salary Range
+Target Salary:
 - 40+ LPA
-
----
-
-# 🛠️ Tech Stack Covered
-
-## ☁️ Cloud
-- AWS
-- EKS
-- VPC
-- IAM
-- Route53
-- CloudWatch
-- ALB/NLB
-
----
-
-## 📦 Containers
-- Docker
-- Kubernetes
-- Helm
-- ArgoCD
-
----
-
-## 🏗️ Infrastructure as Code
-- Terraform
-
----
-
-## 🔄 CI/CD
-- Jenkins
-- GitHub Actions
-- GitLab CI
-
----
-
-## 📊 Monitoring & Observability
-- Prometheus
-- Grafana
-- ELK Stack
-- Loki
-
----
-
-## 🐧 Linux & Networking
-- Process Management
-- DNS
-- TCP/IP
-- TLS
-- Load Balancer
-- Reverse Proxy
-
----
-
-# 📅 30-Day Preparation Plan
-
-| Phase | Focus |
-|---|---|
-| Days 1–7 | Linux + Networking + AWS |
-| Days 8–15 | Docker + Kubernetes |
-| Days 16–22 | Monitoring + SRE + System Design |
-| Days 23–30 | Mock Interviews + Production Scenarios |
 
 ---
 
@@ -137,151 +72,522 @@ devops-interview-roadmap/
 
 ---
 
-# 🔥 High Priority Topics
+# 🐧 linux/
 
-## Kubernetes
-- Pod Lifecycle
-- Deployments
-- Services
-- Ingress
+# Important Topics
+
+## Linux Fundamentals
+- Process Management
+- Systemd
+- SSH
+- Permissions
+- File Systems
+- Memory Management
+- CPU Scheduling
+
+## Networking Commands
+```bash
+netstat
+ss
+tcpdump
+curl
+dig
+ping
+traceroute
+```
+
+## Important Linux Commands
+```bash
+top
+htop
+ps -ef
+grep
+awk
+sed
+journalctl
+df -h
+du -sh
+iostat
+vmstat
+```
+
+---
+
+# Important Interview Questions
+
+## Q1. Difference between soft link and hard link?
+
+### Answer
+- Hard link points to inode
+- Soft link points to file path
+- Hard link survives original file deletion
+- Soft link breaks if original file deleted
+
+---
+
+## Q2. What will you do if CPU becomes 100%?
+
+### Answer
+1. Identify process
+```bash
+top
+htop
+ps -ef
+```
+
+2. Analyze threads
+3. Check traffic spike
+4. Check cron jobs
+5. Capture logs
+6. Mitigate using scaling or restart
+7. Perform RCA
+
+---
+
+# ☸️ kubernetes/
+
+# Important Topics
+
+## Kubernetes Core
+- Pod
+- Deployment
+- Service
+- ConfigMap
+- Secret
+- Namespace
+
+## Advanced Kubernetes
 - RBAC
 - HPA
-- StatefulSets
-- Troubleshooting
+- StatefulSet
+- DaemonSet
+- Taints/Tolerations
+- Affinity
 
----
+## Networking
+- Ingress
+- CoreDNS
+- kube-proxy
+- CNI
 
-## Linux
-- CPU Debugging
-- Memory Issues
-- Disk Issues
-- Network Debugging
-- Process Management
-
----
-
-## AWS
-- VPC
-- ALB/NLB
-- Auto Scaling
-- IAM
-- EKS
-- CloudWatch
-
----
-
-## System Design
-- CI/CD Platform
-- Observability Platform
-- Multi-Region Infrastructure
-- HA & DR
-
----
-
-# 🚨 Scenario-Based Interview Preparation
-
-This repository focuses heavily on:
-- Production outages
-- Kubernetes failures
-- High latency debugging
-- Scaling issues
-- CI/CD failures
-- Infrastructure incidents
-
-### Example Scenarios
-- CrashLoopBackOff
-- Pod Pending
-- 502/503/504 Errors
-- CPU Spike
-- Memory Leak
-- ALB Failures
-- EKS Node Issues
-
----
-
-# 📖 Best Resources
-
-## Kubernetes
-- KodeKloud
-- Kubernetes Official Docs
-
-## AWS
-- AWS Skill Builder
-
-## Linux
-- Linux Journey
-
-## DevOps Learning
-- TechWorld with Nana
-
-## Hands-On Labs
-- Killercoda
-
----
-
-# 💡 Senior-Level Interview Mindset
-
-A senior engineer should answer interviews with:
-1. Impact Analysis
-2. Investigation Steps
-3. Mitigation Plan
-4. Root Cause Analysis
-5. Prevention Strategy
-
----
-
-# 📈 Daily Study Plan
-
-| Activity | Duration |
-|---|---|
-| Theory | 1 Hour |
-| Hands-On Labs | 2 Hours |
-| Scenario Practice | 1 Hour |
-| Mock Interviews | 30 Minutes |
-| Revision Notes | 30 Minutes |
-
----
-
-# 🧠 Important Interview Topics
-
-- Kubernetes Troubleshooting
-- Linux Debugging
-- AWS Architecture
-- CI/CD Design
-- Incident Management
-- Monitoring & Alerting
-- Networking
-- System Design
-- Behavioral Questions
-
----
-
-# 🏆 Key Success Factors
-
-To crack product companies:
-- Think like infrastructure owner
-- Focus on reliability
-- Understand scalability
-- Learn troubleshooting deeply
-- Explain architecture clearly
-- Practice production scenarios
-
----
-
-# 📌 Recommended Daily Practice Commands
-
+## Troubleshooting
 ```bash
 kubectl describe pod
 kubectl logs
 kubectl exec
-top
-htop
-curl
-tcpdump
-netstat
-iostat
-vmstat
+kubectl top pod
+kubectl get events
 ```
+
+---
+
+# Important Interview Questions
+
+## Q1. Pod is in CrashLoopBackOff. How will you debug?
+
+### Answer
+1. Check pod events
+```bash
+kubectl describe pod <pod>
+```
+
+2. Check logs
+```bash
+kubectl logs <pod> --previous
+```
+
+3. Verify:
+- env variables
+- secrets
+- image version
+- memory limits
+- DB connection
+
+4. Rollback deployment if needed
+
+---
+
+## Q2. Difference between Deployment and StatefulSet?
+
+### Answer
+
+### Deployment
+- Stateless applications
+- Random pod names
+- Independent pods
+
+### StatefulSet
+- Stateful applications
+- Stable network identity
+- Ordered deployment
+
+Used for:
+- Kafka
+- MongoDB
+- Elasticsearch
+
+---
+
+# ☁️ aws/
+
+# Important Topics
+
+## AWS Core Services
+- EC2
+- EKS
+- VPC
+- IAM
+- Route53
+- ALB/NLB
+- CloudWatch
+- Auto Scaling
+
+---
+
+# Important Interview Questions
+
+## Q1. Difference between Security Group and NACL?
+
+### Answer
+
+### Security Group
+- Instance level
+- Stateful
+
+### NACL
+- Subnet level
+- Stateless
+
+---
+
+## Q2. Website is down behind ALB. What will you check?
+
+### Answer
+1. Target group health
+2. Security group
+3. EC2 health
+4. Route table
+5. NACL
+6. CloudWatch metrics
+
+---
+
+# 🐳 docker/
+
+# Important Topics
+
+- Docker Architecture
+- Dockerfile
+- Multi-stage build
+- Networking
+- Volumes
+- Image optimization
+
+---
+
+# Important Interview Questions
+
+## Q1. Difference between CMD and ENTRYPOINT?
+
+### Answer
+
+### CMD
+Default command
+
+### ENTRYPOINT
+Fixed executable
+
+ENTRYPOINT cannot be overridden easily.
+
+---
+
+# 🌍 terraform/
+
+# Important Topics
+
+- Providers
+- Resources
+- Variables
+- Outputs
+- State Management
+- Remote Backend
+- Modules
+
+---
+
+# Important Interview Questions
+
+## Q1. Why remote backend is important?
+
+### Answer
+- Shared state
+- Team collaboration
+- State locking
+- Prevent corruption
+
+---
+
+## Q2. What is Terraform drift?
+
+### Answer
+Difference between:
+- actual infrastructure
+- terraform state
+
+Occurs when infra modified manually.
+
+---
+
+# 🔄 cicd/
+
+# Important Topics
+
+- Jenkins
+- GitHub Actions
+- GitLab CI
+- Blue-Green Deployment
+- Canary Deployment
+- Rollback Strategy
+
+---
+
+# Important Interview Questions
+
+## Q1. Pipeline suddenly fails. How will you debug?
+
+### Answer
+1. Check agent availability
+2. Verify credentials
+3. Check logs
+4. Validate dependencies
+5. Check disk space
+
+---
+
+## Q2. Difference between Blue-Green and Canary deployment?
+
+### Answer
+
+### Blue-Green
+Two environments
+Instant switch
+
+### Canary
+Gradual traffic shifting
+Safer for production
+
+---
+
+# 📊 monitoring/
+
+# Important Topics
+
+- Prometheus
+- Grafana
+- ELK Stack
+- Loki
+- Alertmanager
+
+---
+
+# Important Interview Questions
+
+## Q1. What is cardinality issue in Prometheus?
+
+### Answer
+Too many unique labels causing:
+- high memory usage
+- performance issues
+
+---
+
+## Q2. Difference between metrics and logs?
+
+### Answer
+
+### Metrics
+Numerical data
+Good for monitoring
+
+### Logs
+Detailed events
+Good for debugging
+
+---
+
+# 🏗️ system-design/
+
+# Important Topics
+
+## Design These Systems
+- Scalable CI/CD Platform
+- Kubernetes Platform
+- Observability Platform
+- Multi-region Infrastructure
+
+---
+
+# Important Interview Questions
+
+## Q1. How will you design scalable CI/CD platform?
+
+### Answer
+Must include:
+- Git webhook
+- Build agents
+- Artifact repository
+- Container registry
+- Deployment strategy
+- Rollback mechanism
+- Monitoring
+
+---
+
+# 🔥 sre/
+
+# Important Topics
+
+- SLA
+- SLO
+- Error Budget
+- RCA
+- Incident Management
+
+---
+
+# Important Interview Questions
+
+## Q1. Difference between SLA and SLO?
+
+### Answer
+
+### SLA
+Customer agreement
+
+### SLO
+Internal reliability target
+
+---
+
+## Q2. How will you handle production outage?
+
+### Answer
+1. Reduce customer impact
+2. Create bridge call
+3. Rollback/mitigate
+4. Investigate RCA
+5. Prevent recurrence
+
+---
+
+# 🚨 production-scenarios/
+
+# Important Production Scenarios
+
+## Scenario 1
+Pods crashing after deployment
+
+## Scenario 2
+CPU suddenly spikes
+
+## Scenario 3
+Memory leak
+
+## Scenario 4
+503 errors in production
+
+## Scenario 5
+Auto scaling not working
+
+## Scenario 6
+EKS nodes not joining cluster
+
+---
+
+# 🧠 behavioral/
+
+# Most Asked Behavioral Questions
+
+## Q1. Tell me about major outage you handled?
+
+### Answer Structure
+- Situation
+- Impact
+- Action
+- Resolution
+- Learning
+
+---
+
+## Q2. Tell me about conflict with developer?
+
+### Answer
+- collaborative approach
+- data-driven discussion
+- customer-first mindset
+
+---
+
+# 🎯 mock-interviews/
+
+# Mock Interview Topics
+
+## Linux
+- CPU spike
+- Disk full
+- High memory
+
+## Kubernetes
+- Pod pending
+- DNS issue
+- Ingress issue
+
+## AWS
+- ALB issue
+- IAM issue
+- VPC issue
+
+## CI/CD
+- Deployment failure
+- Rollback strategy
+
+---
+
+# 📈 Daily Interview Preparation Plan
+
+| Activity | Duration |
+|---|---|
+| Linux + K8s | 1.5 Hours |
+| AWS + Terraform | 1 Hour |
+| Scenario Practice | 1 Hour |
+| Mock Interview | 30 Minutes |
+| Revision | 30 Minutes |
+
+---
+
+# 🔥 Most Important Skills for 40+ LPA
+
+| Skill | Priority |
+|---|---|
+| Kubernetes Troubleshooting | EXTREME |
+| Linux Debugging | EXTREME |
+| AWS Architecture | HIGH |
+| Incident Handling | HIGH |
+| CI/CD Design | HIGH |
+| System Design | HIGH |
+| Networking | HIGH |
+
+---
+
+# 🏆 Senior Engineer Mindset
+
+Always answer using:
+
+1. Impact
+2. Investigation
+3. Mitigation
+4. RCA
+5. Prevention
 
 ---
 
@@ -289,21 +595,22 @@ vmstat
 
 Become confident in:
 - Production troubleshooting
-- Infrastructure scaling
 - Kubernetes debugging
-- System design discussions
-- Senior-level ownership
+- AWS architecture
+- Incident handling
+- System design
+- Reliability engineering
 
 ---
 
-# ⭐ Contribution
+# ⭐ Contribute
 
 Feel free to contribute:
-- Interview questions
-- Production scenarios
-- Troubleshooting guides
-- System design notes
-- Kubernetes labs
+- Real production scenarios
+- Kubernetes troubleshooting guides
+- AWS architecture notes
+- DevOps interview questions
+- System design documents
 
 ---
 
@@ -313,11 +620,10 @@ MIT License
 
 ---
 
-# 🙌 Connect
+# 🙌 Happy Learning
 
-If this roadmap helped you:
-- ⭐ Star the repository
-- Share with DevOps community
-- Contribute more production scenarios
+Keep building.
+Keep debugging.
+Keep scaling.
 
-Happy Learning 🚀
+🚀
